@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nadoze Barbearia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- IMAGEM -->
+  <section class="imagem-barbearia">
+    <img src="barbearia.jpeg" alt="Nadoze Barbearia">
+  </section>
+
+  <h2 class="titulo-servicos">SERVIÇOS</h2>
+
+  <!-- SERVIÇOS -->
+  <section class="servicos">
+    <div class="cards">
+
+      <div class="card">
+        <img src="cabeloebarba.jpeg">
+        <h3>Cabelo + Barba</h3>
+        <p class="preco">R$ 80,00</p>
+        <button onclick="selecionarServico('Cabelo + Barba')">AGENDAR</button>
+      </div>
+
+      <div class="card">
+        <img src="degrade.jpeg">
+        <h3>Corte Degradê</h3>
+        <p class="preco">R$ 50,00</p>
+        <button onclick="selecionarServico('Corte Degradê')">AGENDAR</button>
+      </div>
+
+      <div class="card">
+        <img src="zero.jpeg">
+        <h3>Corte Zero</h3>
+        <p class="preco">R$ 40,00</p>
+        <button onclick="selecionarServico('Corte Zero')">AGENDAR</button>
+      </div>
+
+      <div class="card">
+        <img src="barba.jpeg">
+        <h3>Barba</h3>
+        <p class="preco">R$ 40,00</p>
+        <button onclick="selecionarServico('Barba')">AGENDAR</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AGENDAMENTO -->
+  <section class="agendamento" id="agendamento">
+    <h2>Agendar corte</h2>
+
+    <select id="servico">
+      <option value="">Escolha o serviço</option>
+      <option>Cabelo + Barba</option>
+      <option>Corte Degradê</option>
+      <option>Corte Zero</option>
+      <option>Barba</option>
+    </select>
+
+    <input type="date" id="data">
+    <input type="time" id="hora">
+
+    <select id="profissional">
+      <option value="">Escolha o profissional</option>
+      <option>Wesley</option>
+      <option>Lucas</option>
+    </select>
+
+    <button onclick="agendar()">Agendar pelo WhatsApp</button>
+  </section>
+
+  <!-- ENDEREÇO -->
+  <section class="endereco">
+    <h3>📍 Onde estamos</h3>
+    <p>Rua doze de setembro, 1071</p>
+    <p>Vila Guilherme – São Paulo</p>
+  </section>
+
+  <a class="btn-mapa" target="_blank"
+    href="https://www.google.com/maps/search/?api=1&query=-23.51289,-46.60792">
+    Ver no Google Maps
+  </a>
+
+  <footer class="footer">
+    © 2026 Nadoze Barbearia
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
